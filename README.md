@@ -35,13 +35,20 @@ Traceback (most recent call last):
     x = self.conv1(x)
   
   File "E:\Anaconda3\lib\site-packages\torch\nn\modules\module.py", line 722, in _call_impl
+  
     result = self.forward(*input, **kwargs)
+  
   File "E:\Anaconda3\lib\site-packages\torch\nn\modules\container.py", line 117, in forward
+  
     input = module(input)
+  
   File "E:\Anaconda3\lib\site-packages\torch\nn\modules\module.py", line 722, in _call_impl
+  
     result = self.forward(*input, **kwargs)
+  
   File "E:\Anaconda3\lib\site-packages\torch\nn\modules\conv.py", line 907, in forward
     output_padding, self.groups, self.dilation)
+  
 RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
   
   但我在train.py中将net传入到GPU了(net.cuda()).
