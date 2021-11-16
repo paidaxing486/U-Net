@@ -12,7 +12,7 @@ data/train 数据集
 test.py 测试文件
 
 当前问题：
-
+'''
 Traceback (most recent call last):
   File "train.py", line 69, in <module>
     outputs = net(inputs)
@@ -33,5 +33,5 @@ Traceback (most recent call last):
   File "E:\Anaconda3\lib\site-packages\torch\nn\modules\conv.py", line 907, in forward
     output_padding, self.groups, self.dilation)
 RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
-  
+  '''
   但我在train.py中将net传入到GPU了(net.cuda()).
