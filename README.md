@@ -1,4 +1,6 @@
 # U-Net
+pytorch版本：1.6.0
+
 train.py 训练文件 
 
 utils.py 自定义函数文件
