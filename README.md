@@ -1,12 +1,18 @@
 # U-Net
-train.py 训练文件 /n
+train.py 训练文件 
+
 utils.py 自定义函数文件
+
 model/model.py 模型
+
 data/dataset 数据集制作
+
 data/train 数据集
+
 test.py 测试文件
 
 当前问题：
+
 Traceback (most recent call last):
   File "train.py", line 69, in <module>
     outputs = net(inputs)
