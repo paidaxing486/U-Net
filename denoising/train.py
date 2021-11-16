@@ -4,7 +4,7 @@ import torch.nn as nn
 import numpy as np
 #from skimage.metrics import structural_similarity
 import os
-from data.celeb import CelebDataset
+
 from data.dataset import ALLDataset
 import torch.optim as optim
 from datetime import datetime
@@ -28,8 +28,8 @@ itype = torch.cuda.LongTensor if use_CUDA else torch.LongTensor
 #加载数据集
 trn_dataset = ALLDataset(data_choose='train')
 val_dataset = ALLDataset(data_choose='test')
-#trn_dataset = CelebDataset(mode='train')
-#val_dataset = CelebDataset(mode='test')
+
+
 trn_dloader = torch.utils.data.DataLoader(dataset=trn_dataset, batch_size=args.train_batchsizes, shuffle=True)
 val_dloader = torch.utils.data.DataLoader(dataset=val_dataset, batch_size=args.test_batchsizes, shuffle=False)
 
