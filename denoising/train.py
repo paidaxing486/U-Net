@@ -22,8 +22,8 @@ args = parser.parse_args()
 #决定是否使用CUDA
 use_CUDA = torch.cuda.is_available()
 
-dtype = torch.cuda.FloatTensor if use_CUDA else torch.FloatTensor
-itype = torch.cuda.LongTensor if use_CUDA else torch.LongTensor
+#dtype = torch.cuda.FloatTensor if use_CUDA else torch.FloatTensor
+#itype = torch.cuda.LongTensor if use_CUDA else torch.LongTensor
 
 #加载数据集
 trn_dataset = ALLDataset(data_choose='train')
